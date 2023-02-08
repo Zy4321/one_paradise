@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  --text-color1: #fff;
+  --text-color2: #1b1b1b;
+  --text-color3: #ccc;
+  --unique-text-color: #c2a471;
+  --border1: 1px solid #c2a471;
+  --border2: 1px solid #fff;
+  --background-color: #1b1b1b;
+  --unique-color: #c2a471;
+}
+
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("navigation.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+li,
+a,
+button {
+  font-size: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 4%;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 30px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  font-size: 13px;
+}
+
+.nav_links li a:hover {
+  color: #c2a471;
+}
+
+#reserve,
+#service,
+#about,
+#appointment,
+#contact-nav,
+#m-service,
+#history,
+#profile,
+#feedback,
+#review {
+  color: #c2a471;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #c2a471;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: rgba(194, 164, 113, 0.8);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 630px;
+}
+
+.content h1 {
+  font-size: 35px;
+  color: var(--text-color1);
+  margin-bottom: 20px;
+}
+
+.start {
+  background: none;
+  border: var(--border1);
+  color: var(--text-color1);
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.start:hover {
+  box-shadow: 0 0 0 1px #c2a471;
+  color: var(--text-color1);
+  transform: scale(1.03);
+}

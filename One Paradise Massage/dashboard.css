@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bona Nova", serif;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #1b1b1b;
+  --golden-color: #c2a471;
+  --light-white: #ccc;
+}
+
+body {
+  background-color: var(--light-white);
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.glass {
+  position: absolute;
+  top: 173px;
+  left: 36px;
+  color: gray;
+}
+
+.btn-wrapper {
+  margin-top: 20px;
+}
+
+.btn-wrapper input,
+.btn-wrapper .s-btn {
+  margin-left: 30px;
+}
+
+.btn-wrapper input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 4px 30px;
+}
+
+.btn-wrapper .s-btn {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: var(--black-color);
+  border-radius: 5px;
+  background: var(--golden-color);
+  padding: 6px 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 166px;
+  left: 235px;
+  width: 70px;
+}
+
+.btn-wrapper .r-btn {
+  margin-left: 30px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: var(--black-color);
+  border-radius: 5px;
+  background: var(--golden-color);
+  padding: 6px 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: absolute;
+  top: 166px;
+  left: 330px;
+  width: 70px;
+}
+
+.btn-wrapper .s-btn:hover,
+.btn-wrapper .r-btn:hover {
+  color: var(--black-color);
+  background: #bb9847;
+}
+
+.t-booking h3 {
+  font-size: 16px;
+  color: var(--black-color);
+  margin: 10px 0 0 29px;
+  font-family: poppins;
+}
+
+#navbar {
+  background-color: var(--black-color);
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#navbar .logo {
+  padding: 25px 0 0 25px;
+  margin-bottom: 20px;
+}
+
+#navbar .logo a {
+  color: var(--golden-color);
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#navbar .nav-links li {
+  list-style: none;
+  padding: 20px 0;
+  transition: 0.3s ease;
+}
+
+#navbar .nav-links li:hover {
+  background: #253047;
+  cursor: pointer;
+}
+
+.tabs-button--active {
+  border-left: 4px solid white;
+}
+
+#navbar .nav-links li i {
+  color: rgba(134, 141, 151);
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 15px;
+  margin: 0 10px 0 25px;
+}
+
+#navbar .nav-links li:hover i,
+#navbar .nav-links li:hover a {
+  color: #f3f4f6;
+}
+
+#navbar .nav-links li a {
+  color: rgba(134, 141, 151);
+  text-decoration: none;
+  font-weight: 300px;
+  transition: 0.3s ease;
+}
+
+#interface {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+  position: relative;
+}
+
+#interface .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  padding: 15px 30px;
+  border-bottom: 3px solid var(--golden-color);
+  position: fixed;
+  width: calc(100% - 300px);
+}
+
+#interface .logout-btn {
+  background-color: var(--black-color);
+  color: var(--golden-color);
+  border: 1px solid var(--black-color);
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 13px 25px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+#interface .logout-btn:hover {
+  background-color: #c2a471;
+  color: var(--black-color);
+  border: 1px solid var(--golden-color);
+}
+
+.title {
+  color: #444a53;
+  padding: 30px 30px 0 30px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 90px;
+}
+
+.details {
+  padding: 30px 30px 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.details .detail-box {
+  background: var(--white-color);
+  width: 235px;
+  padding: 16px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.details .detail-box i {
+  font-size: 25px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background: var(--golden-color);
+  color: #fff;
+  margin-right: 15px;
+}
+
+.details .detail-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.details .detail-box span {
+  font-size: 15px;
+  color: gray;
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-content--active {
+  display: block;
+}
+
+.t-booking table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 15px 0 0 30px;
+}
+
+.t-booking th,
+.t-booking td,
+.t-booking tr {
+  border: 1px solid var(--golden-color);
+  padding: 8px;
+}
+
+.t-booking th {
+  background-color: var(--golden-color);
+}
+
+.t-booking td {
+  font-size: 16px;
+}
+
+.t-booking .edit-btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #d4af37;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.t-booking .delete-btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #d72503;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.t-booking .delete-btn:hover {
+  background: #bf0000;
+}
+
+.t-booking .edit-btn:hover {
+  background: var(--golden-color);
+}
+
+.t-booking .complete-btn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #00ab41;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.t-booking .complete-btn:hover {
+  background: #008631;
+}
+
+.edit-btn,
+.delete-btn,
+.complete-btn,
+.completed-btn {
+  padding: 5px 10px;
+}
+
+.fa-check {
+  color: #00ab41;
+  font-size: 30px;
+  margin-left: 28px;
+}
+
+.t-booking2 table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 15px 0 0 30px;
+}
+
+.t-booking2 th,
+.t-booking2 td,
+.t-booking2 tr {
+  border: 1px solid var(--golden-color);
+  padding: 8px;
+}
+
+.t-booking2 th {
+  background-color: var(--golden-color);
+}
+
+.t-booking2 td {
+  font-size: 16px;
+}
+
+.t-booking2 .delete-btn2 {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: #d72503;
+  padding: 5px 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 12px;
+}
+
+.t-booking2 .delete-btn2:hover {
+  background: #bf0000;
+}
+
+table a {
+  text-decoration: none;
+  color: black;
+}
+
+.services {
+  position: absolute;
+  top: 380px;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.text-field p {
+  padding: 10px 0;
+}
+
+.text-field textarea {
+  padding: 8px 5px;
+  width: 340px;
+  height: 100px;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-field input {
+  padding: 6px 5px;
+  width: 340px;
+}
+
+.btn-container {
+  display: flex;
+}
+
+.upload-btn1 {
+  margin-top: 10px;
+  margin-left: 5px;
+  width: 80px;
+  padding: 5px 6px;
+}
+
+.upload-btn2 {
+  margin-top: 10px;
+  margin-left: 18px;
+  width: 80px;
+  padding: 5px 6px;
+}
+
+.upload-btn1,
+.upload-btn2 {
+  outline: none;
+  border: 1px solid var(--golden-color);
+  color: var(--black-color);
+  border-radius: 5px;
+  background: var(--golden-color);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.upload-btn1:hover,
+.upload-btn2:hover {
+  background-color: #bb9847;
+}
+
+.user-icon {
+  font-size: 50px;
+}
+
+.t-services table {
+  border-collapse: collapse;
+  width: 300px;
+}
+
+.t-services th,
+.t-services td,
+.t-services tr {
+  border: 1px solid var(--golden-color);
+  padding: 8px;
+}
+
+.t-services th {
+  background-color: var(--golden-color);
+}
+
+.t-services td {
+  font-size: 16px;
+}
+
+.t-services {
+  position: absolute;
+  bottom: 30px;
+  left: 550px;
+}

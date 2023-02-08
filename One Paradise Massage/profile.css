@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  --text-color1: #fff;
+  --text-color2: #1b1b1b;
+  --text-color3: #ccc;
+  --unique-text-color: #c2a471;
+  --border1: 1px solid #c2a471;
+  --border2: 1px solid #fff;
+  --background-color: #1b1b1b;
+  --unique-color: #c2a471;
+}
+
+.profile-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("3candle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 850px;
+  display: flex;
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+}
+
+.wrapper .left {
+  width: 35%;
+  background: #130e11;
+  padding: 100px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper .left img {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 130px;
+  height: auto;
+}
+
+.wrapper .left h4 {
+  margin-bottom: 10px;
+}
+
+.wrapper .left p {
+  font-size: 12px;
+}
+
+.wrapper .right {
+  width: 65%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapper .right .info {
+  margin-bottom: 15px;
+}
+
+.wrapper .right .info h3 {
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #353c4e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapper .right .info_data {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.wrapper .right .info_data .data {
+  width: 45%;
+}
+
+.wrapper .right .info_data .data h4 {
+  color: #353c4e;
+  margin-bottom: 5px;
+}
+
+.wrapper .right .info_data .data p {
+  font-size: 13px;
+  margin-bottom: 100px;
+  color: #919aa3;
+}
+
+.wrapper .right .info_data button {
+  position: absolute;
+  bottom: 10;
+  right: 10;
+  background-color: #c2a471;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-size: 15px;
+}

@@ -1,0 +1,867 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  --text-color1: #fff;
+  --text-color2: #1b1b1b;
+  --text-color3: #ccc;
+  --unique-text-color: #c2a471;
+  --border1: 1px solid #c2a471;
+  --border2: 1px solid #fff;
+  --background-color: #1b1b1b;
+  --unique-color: #c2a471;
+}
+
+.homepage-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Background Images/Homepage-BG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+/*----------------Homepage Section------------------*/
+
+/* header */
+header {
+  width: 100%;
+}
+
+.navwrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color1);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.logo-text {
+  text-decoration: none;
+  color: var(--unique-text-color);
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#contact::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#r-login::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#login::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#a-login::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#signup::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#review::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.navbar li::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.6s ease;
+}
+
+.navbar li:hover::after {
+  width: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 630px;
+}
+
+.content h1 {
+  font-size: 2vw;
+  color: var(--text-color1);
+  margin-bottom: 20px;
+}
+
+.start {
+  background: none;
+  border: var(--border1);
+  color: var(--text-color1);
+  font-size: 1.63vw;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.start:hover {
+  box-shadow: 0 0 0 1px #c2a471;
+  color: var(--text-color1);
+  transform: scale(1.03);
+}
+
+/*----------------Roles Section------------------*/
+
+.role-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("Background Images/Role-BG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.content-p {
+  font-size: 1.45vw;
+  font-weight: 600;
+  color: var(--text-color1);
+  margin-bottom: 30px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.admin-btn,
+.user-btn {
+  background: var(--background-color);
+  border: var(--border1);
+  color: var(--unique-text-color);
+  font-size: 1.3vw;
+  font-weight: 600;
+  width: 9.7vw;
+  padding: 10px 20px;
+  margin-right: -10%;
+  margin-left: -10%;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.admin-btn:hover,
+.user-btn:hover {
+  background: var(--unique-color);
+  border: 1px solid transparent;
+  color: var(--text-color2);
+  box-shadow: 0 0 0 1px #c2a471;
+}
+
+/*----------------Login Section------------------*/
+
+.login-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Background Images/Login-BG.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background: rgba(27, 27, 27, 0.2);
+  padding: 60px 0;
+  color: var(--text-color1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-top: 22px;
+}
+
+.form-container .welcome-msg {
+  text-align: center;
+  font-family: "Bona Nova", serif;
+  font-size: 25px;
+  font-style: italic;
+  color: var(--text-color1);
+}
+
+.form-container .admin-msg {
+  text-align: center;
+  font-family: "Bona Nova", serif;
+  font-size: 30px;
+  font-style: italic;
+  color: var(--unique-text-color);
+}
+
+.form-container h3 span {
+  font-family: "Bona Nova", serif;
+  font-style: italic;
+  font-size: 30px;
+  color: var(--unique-text-color);
+}
+
+.input-container {
+  margin: 31px auto;
+  width: 80%;
+  border-bottom: var(--border1);
+  padding-top: 13px;
+  padding-bottom: 5px;
+}
+
+.input-field {
+  width: 90%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--unique-text-color);
+  font-family: "Bona Nova", serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+::placeholder {
+  color: var(--text-color3);
+}
+
+.input-container .fa {
+  margin-right: 5px;
+  color: var(--unique-color);
+  width: 15px;
+}
+
+.pwd-visibility {
+  position: absolute;
+  cursor: pointer;
+}
+
+#visible {
+  display: none;
+  position: absolute;
+  top: 2px;
+}
+
+#hidden {
+  position: absolute;
+  top: 2px;
+}
+
+.register {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+
+.register a {
+  color: var(--unique-text-color);
+  font-size: 13px;
+  font-family: "Bona Nova", serif;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.login-btn {
+  margin: 20px 0 20px 50px;
+  width: 80%;
+  outline: none;
+  padding: 10px 0;
+  border: var(--border1);
+  background: transparent;
+  cursor: pointer;
+  color: var(--unique-text-color);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Bona Nova", serif;
+  transition: 0.5s ease;
+}
+
+.login-btn:hover {
+  background: var(--unique-color);
+  border: 1px solid transparent;
+  color: var(--text-color2);
+  box-shadow: 0 0 0 1px #c2a471;
+}
+
+/*----------------Register Section------------------*/
+
+.form-container .signup {
+  text-align: center;
+  font-family: "Bona Nova", serif;
+  font-size: 30px;
+  font-style: italic;
+  color: var(--unique-text-color);
+}
+
+.signup-btn {
+  margin: 20px 0 20px 50px;
+  width: 80%;
+  outline: none;
+  padding: 10px 0;
+  border: var(--border1);
+  background: transparent;
+  cursor: pointer;
+  color: var(--unique-text-color);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Bona Nova", serif;
+  transition: 0.5s ease;
+}
+
+.signup-btn:hover {
+  background: var(--unique-color);
+  border: 1px solid transparent;
+  color: var(--text-color2);
+  box-shadow: 0 0 0 1px #c2a471;
+}
+
+.redirect {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  color: var(--text-color1);
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Bona Nova", serif;
+}
+
+.redirect span a {
+  text-decoration: none;
+  color: var(--unique-text-color);
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Bona Nova", serif;
+}
+
+.error-msg {
+  margin-top: 35px;
+  text-align: center;
+  font-family: "Bona Nova", serif;
+  font-size: 20px;
+  color: var(--unique-text-color);
+}
+
+/*----------------About Us Section------------------*/
+
+.about {
+  background-color: #1b1b1b;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Background Images/about-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Bona Nova", serif;
+}
+.about-container1 img {
+  height: auto;
+  width: 550px;
+  max-width: 100%;
+  border-radius: 10px;
+  transition: 0.4s ease;
+}
+
+.about-container1 img:hover {
+  transform: scale(1.05);
+}
+
+.about-container1 {
+  width: 90%;
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.about-text1 {
+  width: 530px;
+  max-width: 100%;
+  padding: 0 10px;
+  transition: 0.4s ease;
+}
+
+.about-text1:hover {
+  transform: scale(1.05);
+}
+
+.about-text1 h1 {
+  color: #c2a471;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.about-text1 h5 {
+  color: #c2a471;
+  font-size: 20px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.about-text1 p {
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 27px;
+  font-size: 15px;
+  margin-bottom: 45px;
+}
+
+.about-container1 .about-contactbtn {
+  background: #c2a471;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 35px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+.about-container1 .about-contactbtn:hover {
+  background: #957742;
+  cursor: pointer;
+}
+
+.about-line {
+  background-color: #c2a471;
+  width: 100px;
+  height: 2px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+/*----------------Services Section------------------*/
+
+.services {
+  background-color: #1b1b1b;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Background Images/services.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+  font-family: "Bona Nova", serif;
+}
+.services-column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 0;
+  padding: 30px 8px;
+}
+
+.services-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 8px;
+  transition: 0.2s ease;
+  background-color: transparent;
+  height: auto;
+}
+
+.services-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.services-card:hover {
+  transform: scale(1.05);
+}
+
+.services-head {
+  padding: 30px;
+  text-align: center;
+  color: #c2a471;
+  font-size: 30px;
+}
+
+.services-line {
+  background-color: #c2a471;
+  width: 70px;
+  height: 3px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.services-container {
+  padding: 20px 16px;
+  height: 300px;
+}
+
+.services-card-line {
+  background-color: #c2a471;
+  width: 70px;
+  height: 2px;
+  margin: 0 0 10px 10px;
+}
+
+.services-container h2 {
+  color: #c2a471;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.services-container p {
+  letter-spacing: 1px;
+  line-height: 27px;
+  font-size: 15px;
+  margin-top: 20px;
+  width: auto;
+  color: white;
+}
+
+.paragraph {
+  height: 165px;
+}
+
+.services-container::after,
+.services-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.services-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #c2a471;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  transition: 0.5s ease;
+}
+
+.services-button:hover {
+  background-color: #957742;
+}
+
+@media screen and (max-width: 1350px) {
+  .services-column {
+    width: 45%;
+    display: block;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .services-column {
+    width: 90%;
+    display: block;
+    margin-left: 40px;
+  }
+}
+
+/*----------------Booking Section------------------*/
+
+.booking-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("navigation.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.booking {
+  margin-top: 35px;
+}
+
+.booking-form {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking-form form {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-left,
+.container-right {
+  text-align: center;
+  width: 100%;
+}
+
+.textField {
+  width: 90%;
+  margin: 25px 0;
+  padding: 5px 35px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Bona Nova", serif;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--unique-color);
+  border-bottom: var(--border1);
+  position: relative;
+  cursor: pointer;
+}
+
+.textField option {
+  background: #1b1b1b;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.fa-calendar-plus-o {
+  position: absolute;
+  color: var(--unique-color);
+  bottom: 314px;
+  left: 48px;
+}
+
+.fa-clock-o {
+  position: absolute;
+  color: var(--unique-color);
+  top: 210px;
+  left: 48px;
+}
+
+.fa-bed {
+  position: absolute;
+  color: var(--unique-color);
+  bottom: 149px;
+  left: 48px;
+}
+
+.submit-form {
+  margin: 15px 0 0 0;
+  width: 80%;
+  outline: none;
+  padding: 10px 0;
+  border: var(--border1);
+  background: transparent;
+  cursor: pointer;
+  color: var(--unique-text-color);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Bona Nova", serif;
+  transition: 0.5s ease;
+}
+
+.submit-form:hover {
+  background: var(--unique-color);
+  border: 1px solid transparent;
+  color: var(--text-color2);
+  box-shadow: 0 0 0 1px #c2a471;
+}
+
+/*----------------Responsive------------------*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    right: 0;
+    left: 0;
+    top: 50px;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .navbar li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .navbar {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    color: white;
+  }
+}
+
+.back-btn {
+  text-decoration: none;
+  color: var(--unique-text-color);
+  border-bottom: 2px solid transparent;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Bona Nova", serif;
+  margin-left: 20px;
+  position: absolute;
+  top: 20px;
+  transition: 0.5s ease;
+}
+
+.back-btn:hover {
+  border-bottom: 2px solid var(--unique-text-color);
+}

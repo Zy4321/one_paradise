@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  --text-color1: #fff;
+  --text-color2: #1b1b1b;
+  --text-color3: #ccc;
+  --unique-text-color: #c2a471;
+  --border1: 1px solid #c2a471;
+  --border2: 1px solid #fff;
+  --background-color: #1b1b1b;
+  --unique-color: #c2a471;
+}
+
+.contact-bg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("Background Images/contact-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.navwrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding: 25px 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--text-color1);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.logo-text {
+  text-decoration: none;
+  color: var(--unique-text-color);
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+.navbar li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#contact::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#r-login::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#login::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#a-login::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+#signup::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.navbar li::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: var(--unique-text-color);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.6s ease;
+}
+
+.navbar li:hover::after {
+  width: 100%;
+}
+
+main {
+  height: 100vh;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background: rgba(27, 27, 27, 0.4);
+  border-radius: 5px;
+  padding: 60px 0;
+  color: var(--text-color1);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 19px 38px, rgba(0, 0, 0, 0.7) 0px 15px 12px;
+  margin-top: 5%;
+  height: 620px;
+}
+
+.form-container .welcome-msg {
+  text-align: center;
+  font-family: "Bona Nova", serif;
+  font-size: 25px;
+  font-style: italic;
+  color: var(--unique-text-color);
+}
+
+.input-container {
+  margin: 31px auto;
+  width: 80%;
+  border-bottom: var(--border1);
+  padding-top: 13px;
+  padding-bottom: 5px;
+}
+
+.input-field {
+  width: 90%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--unique-text-color);
+  font-family: "Bona Nova", serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-left: 8px;
+}
+
+::placeholder {
+  color: var(--text-color3);
+}
+
+.comment {
+  margin: 31px auto;
+  width: 80%;
+  border-bottom: var(--border1);
+  border: var(--border1);
+}
+
+.comment-field {
+  width: 90%;
+  border: none;
+  padding-bottom: 80px;
+  outline: none;
+  background: transparent;
+  color: var(--unique-text-color);
+  font-family: "Bona Nova", serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-left: 34px;
+}
+
+.input-container i {
+  margin-left: 8px;
+  color: var(--unique-color);
+  width: 15px;
+}
+
+.fa-comment {
+  position: absolute;
+}
+
+.send-btn {
+  margin: 20px 0 20px 50px;
+  width: 80%;
+  outline: none;
+  padding: 10px 0;
+  border: var(--border1);
+  background: transparent;
+  cursor: pointer;
+  color: var(--unique-text-color);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Bona Nova", serif;
+  transition: 0.5s ease;
+}
+
+.send-btn:hover {
+  background: var(--unique-color);
+  border: 1px solid transparent;
+  color: var(--text-color2);
+  box-shadow: 0 0 0 1px #c2a471;
+}
